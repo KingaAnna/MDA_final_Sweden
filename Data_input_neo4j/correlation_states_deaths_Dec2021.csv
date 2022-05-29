@@ -1,0 +1,583 @@
+source,target,correlation
+Alabama,Arkansas,0.7815078344624096
+Alabama,California,0.7482240815335846
+Alabama,Florida,0.9039536553042736
+Alabama,Georgia,0.7677954269841412
+Alabama,Oklahoma,0.9059603303255317
+Alabama,South Carolina,0.7891961607823895
+Alabama,West Virginia,0.8174211133524747
+Arkansas,Alabama,0.7815078344624096
+Arkansas,Florida,0.7168398353601511
+Arkansas,Kentucky,0.7935238570991916
+Arkansas,Oklahoma,0.8580842977122447
+Arkansas,Virginia,0.7079643122081827
+Arkansas,West Virginia,0.7511076642446686
+California,Alabama,0.7482240815335846
+California,Florida,0.8347179572033017
+California,Georgia,0.9404686578383726
+California,Hawaii,0.8743874457214889
+California,Idaho,0.7753126353728395
+California,Louisiana,0.9161583396597155
+California,Mississippi,0.9100745997262056
+California,Missouri,0.8660581161625964
+California,Nevada,0.9027765721490042
+California,North Carolina,0.8965487232930711
+California,Oklahoma,0.740117572577208
+California,South Carolina,0.8952214555884873
+California,Texas,0.9570391388870395
+California,Virgin Islands,0.7299808864454111
+California,Virginia,0.7832397650888447
+California,Washington,0.9271116293165137
+California,West Virginia,0.8203330588546695
+Colorado,Illinois,0.7876434554878913
+Colorado,Indiana,0.7591637556860659
+Colorado,Iowa,0.774408096904722
+Colorado,Massachusetts,0.8054130518254401
+Colorado,Michigan,0.813200848604761
+Colorado,Minnesota,0.8656161944315357
+Colorado,New Hampshire,0.7133893598316818
+Colorado,New Jersey,0.7299367424649195
+Colorado,New Mexico,0.7345176433867076
+Colorado,New York,0.7269033967951375
+Colorado,North Dakota,0.809572357698274
+Colorado,Ohio,0.7938824318905698
+Colorado,Pennsylvania,0.8753968827583305
+Colorado,South Dakota,0.7528943062246974
+Colorado,Wisconsin,0.7120951698873986
+Connecticut,Delaware,0.7722264886158418
+Connecticut,District of Columbia,0.796118079420694
+Connecticut,Illinois,0.9201608516172697
+Connecticut,Indiana,0.8591838389028078
+Connecticut,Iowa,0.7838789621745934
+Connecticut,Maryland,0.8268982505276335
+Connecticut,Massachusetts,0.9031981649603578
+Connecticut,Nebraska,0.7272289390575349
+Connecticut,New Jersey,0.9248942341265483
+Connecticut,New York,0.9253213044949438
+Connecticut,Ohio,0.8155785797364988
+Connecticut,Pennsylvania,0.8223657809873735
+Connecticut,South Dakota,0.7474649870188418
+Delaware,Connecticut,0.7722264886158418
+Delaware,Illinois,0.7239551129235772
+Delaware,Indiana,0.7145203391255406
+Delaware,Iowa,0.7279304892344607
+Delaware,Massachusetts,0.7258612437913894
+Delaware,Nebraska,0.7235497904344338
+Delaware,New Jersey,0.7395274262633069
+Delaware,New York,0.724063517531808
+Delaware,South Dakota,0.7146037774412642
+District of Columbia,Connecticut,0.796118079420694
+District of Columbia,Illinois,0.8277018369042644
+District of Columbia,Indiana,0.8189552585280648
+District of Columbia,Iowa,0.7671117259092602
+District of Columbia,Maryland,0.7406678987235367
+District of Columbia,Massachusetts,0.7219664908495937
+District of Columbia,Nebraska,0.7231238522295851
+District of Columbia,New Jersey,0.8353273453926016
+District of Columbia,New York,0.870578812015839
+District of Columbia,Pennsylvania,0.7453034024191949
+Florida,Alabama,0.9039536553042736
+Florida,Arkansas,0.7168398353601511
+Florida,California,0.8347179572033017
+Florida,Georgia,0.8940844638577182
+Florida,Kentucky,0.7078040429768421
+Florida,Louisiana,0.7721469338659265
+Florida,Mississippi,0.8015138709914456
+Florida,Oklahoma,0.8646483270679667
+Florida,South Carolina,0.8463501074252892
+Florida,Texas,0.7572753675006708
+Florida,Virginia,0.7876040293640594
+Florida,West Virginia,0.8824940357505973
+Georgia,Alabama,0.7677954269841412
+Georgia,California,0.9404686578383726
+Georgia,Florida,0.8940844638577182
+Georgia,Hawaii,0.8466980792462708
+Georgia,Idaho,0.7185718783424524
+Georgia,Louisiana,0.9216548572991716
+Georgia,Mississippi,0.8965746177467138
+Georgia,Missouri,0.7362920663288449
+Georgia,Nevada,0.8242183417602321
+Georgia,North Carolina,0.8608840876818714
+Georgia,Oklahoma,0.7869098188948032
+Georgia,South Carolina,0.8419016029037225
+Georgia,Texas,0.9215401157667459
+Georgia,Virgin Islands,0.7445953079007768
+Georgia,Virginia,0.8228232622540462
+Georgia,Washington,0.8328530779017641
+Georgia,West Virginia,0.8651903916320982
+Hawaii,California,0.8743874457214889
+Hawaii,Georgia,0.8466980792462708
+Hawaii,Idaho,0.8896370398257618
+Hawaii,Louisiana,0.8183228699135875
+Hawaii,Mississippi,0.9275385912382812
+Hawaii,Missouri,0.7429703994451156
+Hawaii,Nevada,0.9052907341938681
+Hawaii,North Carolina,0.930754867097303
+Hawaii,South Carolina,0.8211106662633799
+Hawaii,South Dakota,0.7275288158008414
+Hawaii,Texas,0.9382451569731448
+Hawaii,Virgin Islands,0.8369649861923488
+Hawaii,Virginia,0.786997935257379
+Hawaii,Washington,0.887926706284228
+Hawaii,West Virginia,0.756388491513654
+Idaho,California,0.7753126353728395
+Idaho,Georgia,0.7185718783424524
+Idaho,Hawaii,0.8896370398257618
+Idaho,Iowa,0.7172389874632173
+Idaho,Louisiana,0.7138091954363017
+Idaho,Massachusetts,0.7230060915396895
+Idaho,Mississippi,0.837286777438669
+Idaho,Missouri,0.7349185118129407
+Idaho,Nevada,0.8180137640820215
+Idaho,North Carolina,0.9043000455154042
+Idaho,Ohio,0.738068168996687
+Idaho,South Dakota,0.7847509509227133
+Idaho,Texas,0.8819299243242908
+Idaho,Virgin Islands,0.809640073779266
+Idaho,Virginia,0.7172386762222472
+Idaho,Washington,0.8048288816402315
+Illinois,Colorado,0.7876434554878913
+Illinois,Connecticut,0.9201608516172697
+Illinois,Delaware,0.7239551129235772
+Illinois,District of Columbia,0.8277018369042644
+Illinois,Indiana,0.9457847467047583
+Illinois,Iowa,0.8593884304175459
+Illinois,Maryland,0.8867529449923035
+Illinois,Massachusetts,0.9597220109092803
+Illinois,Michigan,0.8167502830535978
+Illinois,Minnesota,0.8114026343295915
+Illinois,New Hampshire,0.7748183445344528
+Illinois,New Jersey,0.9720064379901521
+Illinois,New Mexico,0.7196684165058451
+Illinois,New York,0.9693115997825694
+Illinois,North Dakota,0.7515299636947159
+Illinois,Ohio,0.9023265218120763
+Illinois,Pennsylvania,0.9297600457819476
+Illinois,South Dakota,0.7794790176613456
+Indiana,Colorado,0.7591637556860659
+Indiana,Connecticut,0.8591838389028078
+Indiana,Delaware,0.7145203391255406
+Indiana,District of Columbia,0.8189552585280648
+Indiana,Illinois,0.9457847467047583
+Indiana,Iowa,0.8891828867972124
+Indiana,Maryland,0.820807141146005
+Indiana,Massachusetts,0.8840185710627739
+Indiana,Michigan,0.8989686264999892
+Indiana,Minnesota,0.8876320915248199
+Indiana,Nebraska,0.7167415794004302
+Indiana,New Hampshire,0.794035746980548
+Indiana,New Jersey,0.8909683195274076
+Indiana,New Mexico,0.8097049333475101
+Indiana,New York,0.9270990873432666
+Indiana,North Dakota,0.7569947098984018
+Indiana,Ohio,0.8457312568603954
+Indiana,Pennsylvania,0.9495200089342002
+Indiana,South Dakota,0.7477357267288292
+Iowa,Colorado,0.774408096904722
+Iowa,Connecticut,0.7838789621745934
+Iowa,Delaware,0.7279304892344607
+Iowa,District of Columbia,0.7671117259092602
+Iowa,Idaho,0.7172389874632173
+Iowa,Illinois,0.8593884304175459
+Iowa,Indiana,0.8891828867972124
+Iowa,Massachusetts,0.857031684137474
+Iowa,Michigan,0.795104468864822
+Iowa,Minnesota,0.7959894750351959
+Iowa,Nebraska,0.7904499868964072
+Iowa,Nevada,0.72788437985789
+Iowa,New Jersey,0.8198671133814328
+Iowa,New Mexico,0.7356341134131855
+Iowa,New York,0.790161478369094
+Iowa,North Carolina,0.7500608963870785
+Iowa,North Dakota,0.8150120742886104
+Iowa,Ohio,0.8381778139238248
+Iowa,Pennsylvania,0.860515634018959
+Iowa,South Dakota,0.823027298902541
+Iowa,Washington,0.7807833475355264
+Iowa,Wyoming,0.7379937220587505
+Kentucky,Arkansas,0.7935238570991916
+Kentucky,Florida,0.7078040429768421
+Kentucky,Oklahoma,0.7410604490400506
+Louisiana,California,0.9161583396597155
+Louisiana,Florida,0.7721469338659265
+Louisiana,Georgia,0.9216548572991716
+Louisiana,Hawaii,0.8183228699135875
+Louisiana,Idaho,0.7138091954363017
+Louisiana,Mississippi,0.8394472471686804
+Louisiana,Missouri,0.745404741382219
+Louisiana,Nevada,0.8736352514958687
+Louisiana,North Carolina,0.8940615796910439
+Louisiana,South Carolina,0.7882069919242132
+Louisiana,Texas,0.925658749180113
+Louisiana,Virgin Islands,0.8161630733350128
+Louisiana,Washington,0.8888139157446425
+Louisiana,West Virginia,0.7203618394653746
+Maine,Montana,0.7296656228485127
+Maryland,Connecticut,0.8268982505276335
+Maryland,District of Columbia,0.7406678987235367
+Maryland,Illinois,0.8867529449923035
+Maryland,Indiana,0.820807141146005
+Maryland,Massachusetts,0.8103281377044891
+Maryland,Michigan,0.7372765282287203
+Maryland,Minnesota,0.7515043347157406
+Maryland,New Hampshire,0.8023298555436595
+Maryland,New Jersey,0.852413785704647
+Maryland,New York,0.9087457345651846
+Maryland,Ohio,0.7692784334700096
+Maryland,Pennsylvania,0.8238342451273903
+Massachusetts,Colorado,0.8054130518254401
+Massachusetts,Connecticut,0.9031981649603578
+Massachusetts,Delaware,0.7258612437913894
+Massachusetts,District of Columbia,0.7219664908495937
+Massachusetts,Idaho,0.7230060915396895
+Massachusetts,Illinois,0.9597220109092803
+Massachusetts,Indiana,0.8840185710627739
+Massachusetts,Iowa,0.857031684137474
+Massachusetts,Maryland,0.8103281377044891
+Massachusetts,Michigan,0.77331240121633
+Massachusetts,Minnesota,0.7928925712824677
+Massachusetts,Nebraska,0.7120201750026462
+Massachusetts,Nevada,0.7461010881565784
+Massachusetts,New Hampshire,0.7367483629163512
+Massachusetts,New Jersey,0.939394967687147
+Massachusetts,New York,0.8936476781897746
+Massachusetts,North Carolina,0.748131895154313
+Massachusetts,North Dakota,0.8095758909267478
+Massachusetts,Ohio,0.9269028482252896
+Massachusetts,Pennsylvania,0.9000026321653222
+Massachusetts,South Dakota,0.8563141438920828
+Massachusetts,Washington,0.7371189185031319
+Michigan,Colorado,0.813200848604761
+Michigan,Illinois,0.8167502830535978
+Michigan,Indiana,0.8989686264999892
+Michigan,Iowa,0.795104468864822
+Michigan,Maryland,0.7372765282287203
+Michigan,Massachusetts,0.77331240121633
+Michigan,Minnesota,0.9620808394494618
+Michigan,New Hampshire,0.895133407197562
+Michigan,New Jersey,0.7024019087730466
+Michigan,New Mexico,0.8848834624634049
+Michigan,New York,0.788039889374762
+Michigan,North Dakota,0.8335461749376316
+Michigan,Ohio,0.79961734928358
+Michigan,Pennsylvania,0.9241857069711623
+Michigan,South Dakota,0.7463993731301832
+Michigan,Wyoming,0.7189736143197161
+Minnesota,Colorado,0.8656161944315357
+Minnesota,Illinois,0.8114026343295915
+Minnesota,Indiana,0.8876320915248199
+Minnesota,Iowa,0.7959894750351959
+Minnesota,Maryland,0.7515043347157406
+Minnesota,Massachusetts,0.7928925712824677
+Minnesota,Michigan,0.9620808394494618
+Minnesota,New Hampshire,0.8843592568157614
+Minnesota,New Jersey,0.7050399130926107
+Minnesota,New Mexico,0.8725169240611089
+Minnesota,New York,0.7656556453900483
+Minnesota,North Dakota,0.8411280786203872
+Minnesota,Ohio,0.7975292872899077
+Minnesota,Pennsylvania,0.9388341394269454
+Minnesota,South Dakota,0.7539651818953699
+Minnesota,Wisconsin,0.7026048823392163
+Minnesota,Wyoming,0.7253772151923586
+Mississippi,California,0.9100745997262056
+Mississippi,Florida,0.8015138709914456
+Mississippi,Georgia,0.8965746177467138
+Mississippi,Hawaii,0.9275385912382812
+Mississippi,Idaho,0.837286777438669
+Mississippi,Louisiana,0.8394472471686804
+Mississippi,Missouri,0.7496426330877749
+Mississippi,Nevada,0.8843760868460566
+Mississippi,North Carolina,0.9087432828187173
+Mississippi,South Carolina,0.8997621012410644
+Mississippi,Texas,0.9282127841395998
+Mississippi,Virgin Islands,0.811036803025279
+Mississippi,Virginia,0.8650759589256496
+Mississippi,Washington,0.8771589549131327
+Mississippi,West Virginia,0.7917246133109072
+Missouri,California,0.8660581161625964
+Missouri,Georgia,0.7362920663288449
+Missouri,Hawaii,0.7429703994451156
+Missouri,Idaho,0.7349185118129407
+Missouri,Louisiana,0.745404741382219
+Missouri,Mississippi,0.7496426330877749
+Missouri,Nevada,0.7591769688066542
+Missouri,North Carolina,0.7812435333639458
+Missouri,South Carolina,0.7561226243845734
+Missouri,South Dakota,0.728428618666074
+Missouri,Tennessee,0.7124222342443879
+Missouri,Texas,0.8313580013488465
+Missouri,Washington,0.8151071526010389
+Montana,Maine,0.7296656228485127
+Montana,Vermont,0.7401239041811492
+Nebraska,Connecticut,0.7272289390575349
+Nebraska,Delaware,0.7235497904344338
+Nebraska,District of Columbia,0.7231238522295851
+Nebraska,Indiana,0.7167415794004302
+Nebraska,Iowa,0.7904499868964072
+Nebraska,Massachusetts,0.7120201750026462
+Nebraska,New Jersey,0.7383483141954273
+Nebraska,New York,0.7074359075535499
+Nevada,California,0.9027765721490042
+Nevada,Georgia,0.8242183417602321
+Nevada,Hawaii,0.9052907341938681
+Nevada,Idaho,0.8180137640820215
+Nevada,Iowa,0.72788437985789
+Nevada,Louisiana,0.8736352514958687
+Nevada,Massachusetts,0.7461010881565784
+Nevada,Mississippi,0.8843760868460566
+Nevada,Missouri,0.7591769688066542
+Nevada,North Carolina,0.9047661832551591
+Nevada,Ohio,0.7116418464131541
+Nevada,South Carolina,0.8143790424870277
+Nevada,South Dakota,0.7715938943653001
+Nevada,Texas,0.9226288834695295
+Nevada,Virgin Islands,0.7969366130540193
+Nevada,Virginia,0.7191055599291826
+Nevada,Washington,0.9207939862439124
+New Hampshire,Colorado,0.7133893598316818
+New Hampshire,Illinois,0.7748183445344528
+New Hampshire,Indiana,0.794035746980548
+New Hampshire,Maryland,0.8023298555436595
+New Hampshire,Massachusetts,0.7367483629163512
+New Hampshire,Michigan,0.895133407197562
+New Hampshire,Minnesota,0.8843592568157614
+New Hampshire,New Mexico,0.7734292902308725
+New Hampshire,New York,0.7455608452879425
+New Hampshire,North Dakota,0.7497707105968208
+New Hampshire,Ohio,0.7779366604358342
+New Hampshire,Pennsylvania,0.8393323557509778
+New Jersey,Colorado,0.7299367424649195
+New Jersey,Connecticut,0.9248942341265483
+New Jersey,Delaware,0.7395274262633069
+New Jersey,District of Columbia,0.8353273453926016
+New Jersey,Illinois,0.9720064379901521
+New Jersey,Indiana,0.8909683195274076
+New Jersey,Iowa,0.8198671133814328
+New Jersey,Maryland,0.852413785704647
+New Jersey,Massachusetts,0.939394967687147
+New Jersey,Michigan,0.7024019087730466
+New Jersey,Minnesota,0.7050399130926107
+New Jersey,Nebraska,0.7383483141954273
+New Jersey,New York,0.9624101415984462
+New Jersey,Ohio,0.8576024817637178
+New Jersey,Pennsylvania,0.8651957709681849
+New Jersey,South Dakota,0.7271024130015444
+New Mexico,Colorado,0.7345176433867076
+New Mexico,Illinois,0.7196684165058451
+New Mexico,Indiana,0.8097049333475101
+New Mexico,Iowa,0.7356341134131855
+New Mexico,Michigan,0.8848834624634049
+New Mexico,Minnesota,0.8725169240611089
+New Mexico,New Hampshire,0.7734292902308725
+New Mexico,North Dakota,0.7620685127115328
+New Mexico,Ohio,0.7258878683999967
+New Mexico,Pennsylvania,0.8359159850342567
+New York,Colorado,0.7269033967951375
+New York,Connecticut,0.9253213044949438
+New York,Delaware,0.724063517531808
+New York,District of Columbia,0.870578812015839
+New York,Illinois,0.9693115997825694
+New York,Indiana,0.9270990873432666
+New York,Iowa,0.790161478369094
+New York,Maryland,0.9087457345651846
+New York,Massachusetts,0.8936476781897746
+New York,Michigan,0.788039889374762
+New York,Minnesota,0.7656556453900483
+New York,Nebraska,0.7074359075535499
+New York,New Hampshire,0.7455608452879425
+New York,New Jersey,0.9624101415984462
+New York,Ohio,0.8281104129726801
+New York,Pennsylvania,0.9023511234022688
+North Carolina,California,0.8965487232930711
+North Carolina,Georgia,0.8608840876818714
+North Carolina,Hawaii,0.930754867097303
+North Carolina,Idaho,0.9043000455154042
+North Carolina,Iowa,0.7500608963870785
+North Carolina,Louisiana,0.8940615796910439
+North Carolina,Massachusetts,0.748131895154313
+North Carolina,Mississippi,0.9087432828187173
+North Carolina,Missouri,0.7812435333639458
+North Carolina,Nevada,0.9047661832551591
+North Carolina,Ohio,0.7295709739054048
+North Carolina,South Carolina,0.7548694626026439
+North Carolina,South Dakota,0.7871630468730896
+North Carolina,Texas,0.9771082358609252
+North Carolina,Virgin Islands,0.8928396911627767
+North Carolina,Virginia,0.7246564714720305
+North Carolina,Washington,0.9432152062702654
+North Carolina,West Virginia,0.7064226359533626
+North Dakota,Colorado,0.809572357698274
+North Dakota,Illinois,0.7515299636947159
+North Dakota,Indiana,0.7569947098984018
+North Dakota,Iowa,0.8150120742886104
+North Dakota,Massachusetts,0.8095758909267478
+North Dakota,Michigan,0.8335461749376316
+North Dakota,Minnesota,0.8411280786203872
+North Dakota,New Hampshire,0.7497707105968208
+North Dakota,New Mexico,0.7620685127115328
+North Dakota,Ohio,0.8058433081588431
+North Dakota,Pennsylvania,0.8260344370492373
+North Dakota,South Dakota,0.9334877523468337
+North Dakota,Vermont,0.7298823256143886
+North Dakota,Wisconsin,0.7788858198334764
+North Dakota,Wyoming,0.7315919540753413
+Ohio,Colorado,0.7938824318905698
+Ohio,Connecticut,0.8155785797364988
+Ohio,Idaho,0.738068168996687
+Ohio,Illinois,0.9023265218120763
+Ohio,Indiana,0.8457312568603954
+Ohio,Iowa,0.8381778139238248
+Ohio,Maryland,0.7692784334700096
+Ohio,Massachusetts,0.9269028482252896
+Ohio,Michigan,0.79961734928358
+Ohio,Minnesota,0.7975292872899077
+Ohio,Nevada,0.7116418464131541
+Ohio,New Hampshire,0.7779366604358342
+Ohio,New Jersey,0.8576024817637178
+Ohio,New Mexico,0.7258878683999967
+Ohio,New York,0.8281104129726801
+Ohio,North Carolina,0.7295709739054048
+Ohio,North Dakota,0.8058433081588431
+Ohio,Pennsylvania,0.8826857742087971
+Ohio,South Dakota,0.8308503732706616
+Oklahoma,Alabama,0.9059603303255317
+Oklahoma,Arkansas,0.8580842977122447
+Oklahoma,California,0.740117572577208
+Oklahoma,Florida,0.8646483270679667
+Oklahoma,Georgia,0.7869098188948032
+Oklahoma,Kentucky,0.7410604490400506
+Oklahoma,South Carolina,0.7018983846660494
+Oklahoma,West Virginia,0.8588965441021683
+Pennsylvania,Colorado,0.8753968827583305
+Pennsylvania,Connecticut,0.8223657809873735
+Pennsylvania,District of Columbia,0.7453034024191949
+Pennsylvania,Illinois,0.9297600457819476
+Pennsylvania,Indiana,0.9495200089342002
+Pennsylvania,Iowa,0.860515634018959
+Pennsylvania,Maryland,0.8238342451273903
+Pennsylvania,Massachusetts,0.9000026321653222
+Pennsylvania,Michigan,0.9241857069711623
+Pennsylvania,Minnesota,0.9388341394269454
+Pennsylvania,New Hampshire,0.8393323557509778
+Pennsylvania,New Jersey,0.8651957709681849
+Pennsylvania,New Mexico,0.8359159850342567
+Pennsylvania,New York,0.9023511234022688
+Pennsylvania,North Dakota,0.8260344370492373
+Pennsylvania,Ohio,0.8826857742087971
+Pennsylvania,South Dakota,0.7714568949192305
+South Carolina,Alabama,0.7891961607823895
+South Carolina,California,0.8952214555884873
+South Carolina,Florida,0.8463501074252892
+South Carolina,Georgia,0.8419016029037225
+South Carolina,Hawaii,0.8211106662633799
+South Carolina,Louisiana,0.7882069919242132
+South Carolina,Mississippi,0.8997621012410644
+South Carolina,Missouri,0.7561226243845734
+South Carolina,Nevada,0.8143790424870277
+South Carolina,North Carolina,0.7548694626026439
+South Carolina,Oklahoma,0.7018983846660494
+South Carolina,Texas,0.8344183134005787
+South Carolina,Virginia,0.7900110092672296
+South Carolina,Washington,0.8050765388156057
+South Carolina,West Virginia,0.7922024546114389
+South Dakota,Colorado,0.7528943062246974
+South Dakota,Connecticut,0.7474649870188418
+South Dakota,Delaware,0.7146037774412642
+South Dakota,Hawaii,0.7275288158008414
+South Dakota,Idaho,0.7847509509227133
+South Dakota,Illinois,0.7794790176613456
+South Dakota,Indiana,0.7477357267288292
+South Dakota,Iowa,0.823027298902541
+South Dakota,Massachusetts,0.8563141438920828
+South Dakota,Michigan,0.7463993731301832
+South Dakota,Minnesota,0.7539651818953699
+South Dakota,Missouri,0.728428618666074
+South Dakota,Nevada,0.7715938943653001
+South Dakota,New Jersey,0.7271024130015444
+South Dakota,North Carolina,0.7871630468730896
+South Dakota,North Dakota,0.9334877523468337
+South Dakota,Ohio,0.8308503732706616
+South Dakota,Pennsylvania,0.7714568949192305
+South Dakota,Tennessee,0.7125795757002777
+South Dakota,Texas,0.7678853765707745
+South Dakota,Vermont,0.7538365212952148
+South Dakota,Washington,0.7768548493289791
+Tennessee,Missouri,0.7124222342443879
+Tennessee,South Dakota,0.7125795757002777
+Texas,California,0.9570391388870395
+Texas,Florida,0.7572753675006708
+Texas,Georgia,0.9215401157667459
+Texas,Hawaii,0.9382451569731448
+Texas,Idaho,0.8819299243242908
+Texas,Louisiana,0.925658749180113
+Texas,Mississippi,0.9282127841395998
+Texas,Missouri,0.8313580013488465
+Texas,Nevada,0.9226288834695295
+Texas,North Carolina,0.9771082358609252
+Texas,South Carolina,0.8344183134005787
+Texas,South Dakota,0.7678853765707745
+Texas,Virgin Islands,0.8533346617824994
+Texas,Virginia,0.7560437633819844
+Texas,Washington,0.9475337211757424
+Texas,West Virginia,0.7905906121404519
+Vermont,Montana,0.7401239041811492
+Vermont,North Dakota,0.7298823256143886
+Vermont,South Dakota,0.7538365212952148
+Virgin Islands,California,0.7299808864454111
+Virgin Islands,Georgia,0.7445953079007768
+Virgin Islands,Hawaii,0.8369649861923488
+Virgin Islands,Idaho,0.809640073779266
+Virgin Islands,Louisiana,0.8161630733350128
+Virgin Islands,Mississippi,0.811036803025279
+Virgin Islands,Nevada,0.7969366130540193
+Virgin Islands,North Carolina,0.8928396911627767
+Virgin Islands,Texas,0.8533346617824994
+Virgin Islands,Washington,0.8266890405244058
+Virginia,Arkansas,0.7079643122081827
+Virginia,California,0.7832397650888447
+Virginia,Florida,0.7876040293640594
+Virginia,Georgia,0.8228232622540462
+Virginia,Hawaii,0.786997935257379
+Virginia,Idaho,0.7172386762222472
+Virginia,Mississippi,0.8650759589256496
+Virginia,Nevada,0.7191055599291826
+Virginia,North Carolina,0.7246564714720305
+Virginia,South Carolina,0.7900110092672296
+Virginia,Texas,0.7560437633819844
+Virginia,West Virginia,0.7374450856622746
+Washington,California,0.9271116293165137
+Washington,Georgia,0.8328530779017641
+Washington,Hawaii,0.887926706284228
+Washington,Idaho,0.8048288816402315
+Washington,Iowa,0.7807833475355264
+Washington,Louisiana,0.8888139157446425
+Washington,Massachusetts,0.7371189185031319
+Washington,Mississippi,0.8771589549131327
+Washington,Missouri,0.8151071526010389
+Washington,Nevada,0.9207939862439124
+Washington,North Carolina,0.9432152062702654
+Washington,South Carolina,0.8050765388156057
+Washington,South Dakota,0.7768548493289791
+Washington,Texas,0.9475337211757424
+Washington,Virgin Islands,0.8266890405244058
+West Virginia,Alabama,0.8174211133524747
+West Virginia,Arkansas,0.7511076642446686
+West Virginia,California,0.8203330588546695
+West Virginia,Florida,0.8824940357505973
+West Virginia,Georgia,0.8651903916320982
+West Virginia,Hawaii,0.756388491513654
+West Virginia,Louisiana,0.7203618394653746
+West Virginia,Mississippi,0.7917246133109072
+West Virginia,North Carolina,0.7064226359533626
+West Virginia,Oklahoma,0.8588965441021683
+West Virginia,South Carolina,0.7922024546114389
+West Virginia,Texas,0.7905906121404519
+West Virginia,Virginia,0.7374450856622746
+Wisconsin,Colorado,0.7120951698873986
+Wisconsin,Minnesota,0.7026048823392163
+Wisconsin,North Dakota,0.7788858198334764
+Wyoming,Iowa,0.7379937220587505
+Wyoming,Michigan,0.7189736143197161
+Wyoming,Minnesota,0.7253772151923586
+Wyoming,North Dakota,0.7315919540753413
