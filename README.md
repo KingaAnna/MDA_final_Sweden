@@ -1,1 +1,4 @@
 # MDA_final
+In our project, we studied how Covid-19 evolved in the USA up to 2022-04-11. The raw datasets that were used can be found in the folder RawData, the preprocessed data sets can be found in the folder PreprocessedData and the data that need to be in the input folder of Neo4j, can be found in the folder Data_input_neo4j. The figures that were obtained during the analysis, are in the folder Figures. At last, the python files that need to be imported in the notebooks, can be found in the folder Python_files. The code itself is divided into different notebooks, to keep to code structured. Some notebooks handle the preprocessing of the data, while other notebooks handle to data analysis and visualization. However, they can be run in a random error, since all necessary preprocessed data is already in the folder PreprocessedData.
+
+To get more insight in our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/
