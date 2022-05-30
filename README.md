@@ -6,7 +6,7 @@ The notebooks are:
   - CommutingFlowStatesPreprocessing.ipynb: Preprocess the commuting flow data set and calculate the degree centrality of a graph, constructed in Neo4j.
   - Visualization.ipynb: Visualize the weekly cases in the USA.
   - infectionRates.ipynb: Calculate and visualize the infection rates, together with the preprocessed Covid measures data. Also, a SVM model is constructed to predict       the infection rates based on training data. 
-  - Clustering_communities.ipynb: Construct a graph in Neo4j based on the correlations between cases and deaths and use Label propagation. Build a pipeline including K-
+  - Clustering_Communities.ipynb: Construct a graph in Neo4j based on the correlations between cases and deaths and use Label propagation. Build a pipeline including K-
     means and spectral clustering using the weekly cases.
 
 To get more insight in our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/
