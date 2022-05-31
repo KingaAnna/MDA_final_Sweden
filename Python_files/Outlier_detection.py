@@ -12,7 +12,7 @@ from sklearn.svm import OneClassSVM
 
 
 class my_IsolationForest:
-    def __init__(self,contam=0.01):
+    def __init__(self,contam=0.01,random_state=100):
         self.iso=IsolationForest(contamination=contam)
         self.fips=None
         self.transformed=None
