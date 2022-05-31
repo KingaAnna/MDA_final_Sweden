@@ -22,7 +22,7 @@ class my_graph:
         self.period=period
         self.my_list=my_list
     def __repr__(self):
-        return "Makes nodes and edges based on the correlations between timeseries for each state"
+        return "Makes nodes and edges based on the correlations between timeseries for each state."
     def fit_transform(self):
         data_grouped=self.data.groupby(["state", "date"],as_index=False).agg({self.my_list[1]:'sum'})
         #If a date is not present in a certain county, we can assume that no cases where reported yet during this period
@@ -48,6 +48,8 @@ class my_graph:
 class my_algorithms:
     def __init__(self,graph):
         self.graph=graph
+    def __repr__(self):
+        return "Doing community detection using Label propagation on the graph."
     def fit_community(self,nodes,relationships):
         self.graph.run("MATCH (n) DETACH DELETE n")
         
