@@ -27,6 +27,9 @@ class Firth_regression:
         return "Logistic regression procedure (Firth)."
     
     def fit(self,X,y, start_vec=None, step_limit=1000, convergence_limit=0.0001):
+        """
+        This function fits a Firth logistic regression model.
+        """
         def firth_likelihood(beta, logit):
             return -(logit.loglike(beta) + 0.5*np.log(np.linalg.det(-logit.hessian(beta))))
         X=sm.add_constant(X)
@@ -94,6 +97,9 @@ class logistic_model:
     def __repr__(self):
         return "Logistic regression model"
     def fit(self,X,y):
+        """
+        This function fits a logistic regression model.
+        """
         X=sm.add_constant(X)
         logit_model = sm.Logit(y, X)
         self.result=logit_model.fit()

@@ -24,6 +24,11 @@ class my_graph:
     def __repr__(self):
         return "Makes nodes and edges based on the correlations between timeseries for each state."
     def fit_transform(self):
+        """
+        This function creates nodes and edges based on the correlations between the evolution of cases/deaths of the states.
+        Each node represents a state and two nodes are connected if their correlation is larger than 0.7.
+        The weekly rolling averages of cases/deaths are used.
+        """
         data_grouped=self.data.groupby(["state", "date"],as_index=False).agg({self.my_list[1]:'sum'})
         #If a date is not present in a certain county, we can assume that no cases where reported yet during this period
         #(the NA values occur for early dates, when no Covid case was reported yet in that county).
@@ -51,6 +56,10 @@ class my_algorithms:
     def __repr__(self):
         return "Doing community detection using Label propagation on the graph."
     def fit_community(self,nodes,relationships):
+        """
+        This function creates a graph in Neo4j based on a nodes and edges file.
+        An in-memory graph is created and community detection is performed using Label propagation.
+        """
         self.graph.run("MATCH (n) DETACH DELETE n")
         
         # make nodes
