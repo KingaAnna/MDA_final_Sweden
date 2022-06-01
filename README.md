@@ -8,5 +8,6 @@ The notebooks are:
   - **infectionRates.ipynb**: Calculate and visualize the infection rates, together with the preprocessed Covid measures data. Also, a SVM model is constructed to predict the infection rates based on training data. 
   - **Clustering_Communities.ipynb**: Construct a graph in Neo4j based on the correlations between cases and deaths and use Label propagation. Build a pipeline including K-means and spectral clustering using the weekly cases.
   - **commuteGraph.ipynb**: Uses workplaceFlows commuting data on commutes from one county to another to calculate centrality based on commuting statistics
+  - **Biobot Waste Water.ipynb**: Uses a LM with the virus concentration as the only variable to predict daily increased cases
 
 To get more insight in our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
