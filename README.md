@@ -8,5 +8,7 @@ The notebooks are:
   - **Clustering_Communities.ipynb**: Construct a graph in Neo4j based on the correlations between cases and deaths and use Label propagation. Build a pipeline including K-means and spectral clustering using the weekly cases.
   - **commuteGraph.ipynb**: Uses workplaceFlows commuting data on commutes from one county/state to another to calculate centrality based on commuting statistics
   - **Biobot Waste Water.ipynb**: Uses a LM with the virus concentration as the only variable to predict daily increased cases
+  - **SportingEvents.ipynb**: Study of large sporting events and Covid case increase.
+  - **MaskUse.ipynb**: Brief investigation showing that mask use increase when cases increase.
 
 To get more insight in our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
