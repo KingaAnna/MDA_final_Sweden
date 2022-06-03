@@ -57,7 +57,7 @@ alldata = alldata[keepcols]
 # poverty variables excluded because they have a lot of missings
 
 
-# land area (LND110210D in column X refers to 2010 data)
+# land area
 ### keep county data (drop state & US-wide data)
 landdata = df_list[16][(df_list[16]["STCOU"] >= 1000) & (~df_list[16]["STCOU"].astype(str).str.endswith("000"))].copy()
 
