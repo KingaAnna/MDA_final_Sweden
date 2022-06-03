@@ -14,6 +14,9 @@ importlist = [r'RawData\us-counties-2020.csv', r'RawData\us-counties-2021.csv', 
 df_list = []
 for importdata in importlist:
     df_list.append(pd.read_csv(importdata, header=0, encoding='utf-8'))
+    
+periods = [pd.Timestamp("2020-06-20"), pd.Timestamp("2020-12-20"), pd.Timestamp("2021-06-20"),
+           pd.Timestamp("2021-12-20"), pd.Timestamp("2022-04-11")]
 
 
 # complete feature matrix
@@ -23,17 +26,14 @@ allfeatures = df_list[3].copy()
 # define target variable
 coviddata = pd.concat([df_list[0], df_list[1], df_list[2]], axis=0)
 coviddata['fips'] = coviddata['geoid'].apply(lambda x: int(x[-5:]))
+coviddata['datetime'] = pd.to_datetime(coviddata['date'], format="%Y-%m-%d")
 
 ### aggregate over whole time period
 targets = coviddata.groupby('fips').agg({'cases_avg_per_100k': 'mean', 'deaths_avg_per_100k': 'mean'})
-targets = targets.reset_index()
 renaming = {'cases_avg_per_100k': 'avgcases_all', 'deaths_avg_per_100k': 'avgdeaths_all'}
-targets.rename(columns=renaming, inplace=True)
+targets = targets.reset_index().rename(columns=renaming)
 
 ### aggregate per period
-coviddata['datetime'] = pd.to_datetime(coviddata['date'], format="%Y-%m-%d")
-periods = [pd.Timestamp("2020-06-20"), pd.Timestamp("2020-12-20"), pd.Timestamp("2021-06-20"),
-           pd.Timestamp("2021-12-20"), pd.Timestamp("2022-04-11")]
 coviddata_periods = []
 coviddata_periods_agg = []
 for i in range(0, 5):
@@ -44,9 +44,8 @@ for i in range(0, 5):
                                            (coviddata['datetime'] > periods[i - 1])])
     coviddata_periods_agg.append(coviddata_periods[i].groupby('fips').agg({'cases_avg_per_100k': 'mean',
                                                                            'deaths_avg_per_100k': 'mean'}))
-    coviddata_periods_agg[i] = coviddata_periods_agg[i].reset_index()
     renaming = {'cases_avg_per_100k': f'avgcases_period{i + 1}', 'deaths_avg_per_100k': f'avgdeaths_period{i + 1}'}
-    coviddata_periods_agg[i].rename(columns=renaming, inplace=True)
+    coviddata_periods_agg[i] = coviddata_periods_agg[i].reset_index().rename(columns=renaming)
     targets = targets.merge(coviddata_periods_agg[i], how='left', on='fips', indicator=False)
 
 ### binarize targets (hotspot or not)
@@ -77,8 +76,7 @@ def constructXY(i, target, concatenate=False, keepid=False):
     else:
         XY.drop(columns=[col for col in XY if (col not in selfeatures_static) and (col not in selfeatures_time)
                          and (col != target) and (col != 'fips')], inplace=True)
-    XY.dropna(axis=0, how='any', inplace=True)
-    XY.reset_index(drop=True, inplace=True)
+    XY = XY.dropna(axis=0, how='any').reset_index(drop=True)
     if not concatenate:
         X = XY.drop(columns=target)
         Y = XY[target].astype(int).copy()
@@ -110,32 +108,18 @@ rf = RandomForestClassifier(n_estimators=500, criterion="gini", max_features=fea
                             bootstrap=True, oob_score=True, random_state=303)
 
 
-# fit random forest model for whole time period
-for target in ['avgcases_all_high', 'avgdeaths_all_high']:
-    X, Y = constructXY('all', 'avgcases_all_high')
-
-    rf.fit(X, Y)
-    rf_Y = pd.DataFrame(rf.predict_proba(X), columns=['class 0', 'class 1'])
-
-    print(roc_auc_score(Y, rf_Y['class 1']))
-    print(average_precision_score(Y, rf_Y['class 1']))
-
-    explainer = shap.TreeExplainer(rf)
-    shap_values_all = explainer.shap_values(X)
-    plt.figure()
-    shap.summary_plot(shap_values_all[1], X, feature_names=X.columns, plot_size="auto")
-    plt.savefig(os.path.join('Figures', f'{target}.png'), bbox_inches='tight')
-
-
-# fit random forest model per period
-for i in range(1, 6):
+# fit random forest model for whole time period and per period
+for i in ['all', 1, 2, 3, 4, 5]:
     period = "period" + str(i)
     for target in [f'avgcases_{period}_high', f'avgdeaths_{period}_high']:
         X, Y = constructXY(period, target)
+        
         rf.fit(X, Y)
         rf_Y = pd.DataFrame(rf.predict_proba(X), columns=['class 0', 'class 1'])
+        
         print(roc_auc_score(Y, rf_Y['class 1']))
         print(average_precision_score(Y, rf_Y['class 1']))
+        
         explainer = shap.TreeExplainer(rf)
         shap_values = explainer.shap_values(X)
         plt.figure()
@@ -150,20 +134,20 @@ for i in range(1, 5):
     period = "period" + str(i)
     period_prior = "period" + str(i-1)
     XY = constructXY(period, f'avgcases_{period}_high', concatenate=True, keepid=True)
+    
     if i == 1:
         XY[f'avgcases_{period_prior}'] = 0
         XY[f'avgdeaths_{period_prior}'] = 0
     else:
         XY = XY.merge(targets[[f'avgcases_{period_prior}', f'avgdeaths_{period_prior}', 'fips']], how='left',
                       on='fips', indicator=False)
+        
     renaming = {f'Vaccination_{period}': 'Vaccination', f'Masks_{period}': 'Masks',
                 f'Close_schools_{period}': 'Close_schools', f'Complete_{period}_rate': 'Complete_rate',
                 f'Booster_{period}_rate': 'Booster_rate', f'Mean_temperature_{period}': 'Mean_temperature_period',
                 f'avgcases_{period}_high': 'avgcases_high', f'avgdeaths_{period}_high': 'avgdeaths_high',
                 f'avgcases_{period_prior}': 'avgcases_prior', f'avgdeaths_{period_prior}': 'avgdeaths_prior'}
-    XY.rename(columns=renaming, inplace=True)
-    XY.dropna(axis=0, how='any', inplace=True)
-    XY.reset_index(drop=True, inplace=True)
+    XY = XY.rename(columns=renaming).dropna(axis=0, how='any').reset_index(drop=True)
     df_train = pd.concat([df_train, XY], axis=0)
 
 X_train = df_train.drop(columns=['avgcases_high', 'fips']).copy()
