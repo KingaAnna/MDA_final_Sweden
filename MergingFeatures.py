@@ -210,7 +210,7 @@ for i in range(1, 6):
     else:
         alldata[newcol] = seasondata['second'].values[0]
 
-### per state (based on most recent 2020 data)
+### average per state (based on most recent 2020 data)
 renaming = {119: 'Mean_temperature_perstate', 'index': 'state'}
 weatherdata = df_list[13][df_list[13]['Unnamed: 0'] == 2020].transpose()\
     .drop(index=['Unnamed: 0', 'United States']).reset_index().rename(columns=renaming)
