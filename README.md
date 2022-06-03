@@ -5,10 +5,12 @@ The notebooks are:
   - **CovidMeasuresPreprocessing.ipynb**: Preprocess the data containing Covid measures.
   - **Visualization.ipynb**: Visualize the weekly cases in the USA.
   - **infectionRates.ipynb**: Calculate and visualize the infection rates, together with the preprocessed Covid measures data. Also, a SVM model is constructed to predict the infection rates based on training data. 
+  - **MergingFeatures.py**: Preprocess, aggregate, impute and merge a wide range of features at county and state levels. 
   - **Clustering_Communities.ipynb**: Construct a graph in Neo4j based on the correlations between cases and deaths and use Label propagation. Build a pipeline including K-means and spectral clustering using the weekly cases.
-  - **commuteGraph.ipynb**: Uses workplaceFlows commuting data on commutes from one county/state to another to calculate centrality based on commuting statistics
-  - **Biobot Waste Water.ipynb**: Uses a LM with the virus concentration as the only variable to predict daily increased cases
+  - **commuteGraph.ipynb**: Use workplaceFlows commuting data on commutes from one county/state to another to calculate centrality based on commuting statistics.
+  - **Biobot Waste Water.ipynb**: Build a LM with the virus concentration as the only variable to predict daily increased cases.
+  - **Random Forest Models.py**: Construct a binary target to label counties as hotspot/ no hotspot. Build a series of random forest models to classify and explain the classification as hotspot/ no hotspot. 
   - **SportingEvents.ipynb**: Study of large sporting events and Covid case increase.
   - **MaskUse.ipynb**: Brief investigation showing that mask use increase when cases increase.
 
-To get more insight in our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
+To get more insight into our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
