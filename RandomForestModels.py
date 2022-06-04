@@ -7,21 +7,18 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import average_precision_score, roc_auc_score
 from sklearn.model_selection import cross_val_score
 
-
 # load data
 importlist = [r'RawData\us-counties-2020.csv', r'RawData\us-counties-2021.csv', r'RawData\us-counties-2022.csv',
               r'PreprocessedData\mergedata.csv']
 df_list = []
 for importdata in importlist:
     df_list.append(pd.read_csv(importdata, header=0, encoding='utf-8'))
-    
+
 periods = [pd.Timestamp("2020-06-20"), pd.Timestamp("2020-12-20"), pd.Timestamp("2021-06-20"),
            pd.Timestamp("2021-12-20"), pd.Timestamp("2022-04-11")]
 
-
 # complete feature matrix
 allfeatures = df_list[3].copy()
-
 
 # define target variable
 coviddata = pd.concat([df_list[0], df_list[1], df_list[2]], axis=0)
@@ -54,7 +51,6 @@ for col in contargets:
     newcol = str(col) + '_high'
     targets[newcol] = (targets[col] > targets[col].mean(skipna=True)).astype(int)
     targets.loc[targets[col].isna(), newcol] = np.nan
-
 
 # define function to select data for random forest model
 selfeatures_static = ['median_age_2019', 'housing_one_unit_structures_2019', 'households_speak_limited_english_2019',
@@ -99,49 +95,49 @@ for f in feat_range:
 
 plt.plot(feat_range, feat_scores)
 plt.show()
-feat_best = feat_scores.index(max(feat_scores))+1
-
+feat_best = feat_scores.index(max(feat_scores)) + 1
 
 # instantiate random forest classifier
 shap.initjs()
 rf = RandomForestClassifier(n_estimators=500, criterion="gini", max_features=feat_best,
                             bootstrap=True, oob_score=True, random_state=303)
 
-
 # fit random forest model for whole time period and per period
 for i in ['all', 1, 2, 3, 4, 5]:
-    period = "period" + str(i)
+    if i == 'all':
+        period = i
+    else:
+        period = "period" + str(i)
     for target in [f'avgcases_{period}_high', f'avgdeaths_{period}_high']:
         X, Y = constructXY(period, target)
-        
+
         rf.fit(X, Y)
         rf_Y = pd.DataFrame(rf.predict_proba(X), columns=['class 0', 'class 1'])
-        
+
         print(roc_auc_score(Y, rf_Y['class 1']))
         print(average_precision_score(Y, rf_Y['class 1']))
-        
+
         explainer = shap.TreeExplainer(rf)
         shap_values = explainer.shap_values(X)
         plt.figure()
         shap.summary_plot(shap_values[1], X, feature_names=X.columns)
         plt.savefig(os.path.join('Figures', f'{target}.png'), bbox_inches='tight')
 
-
 # fit prediction model: predict period-5 hotspots based on first 4 periods
 ### prepare training data (first 4 periods)
 df_train = pd.DataFrame()
 for i in range(1, 5):
     period = "period" + str(i)
-    period_prior = "period" + str(i-1)
+    period_prior = "period" + str(i - 1)
     XY = constructXY(period, f'avgcases_{period}_high', concatenate=True, keepid=True)
-    
+
     if i == 1:
         XY[f'avgcases_{period_prior}'] = 0
         XY[f'avgdeaths_{period_prior}'] = 0
     else:
         XY = XY.merge(targets[[f'avgcases_{period_prior}', f'avgdeaths_{period_prior}', 'fips']], how='left',
                       on='fips', indicator=False)
-        
+
     renaming = {f'Vaccination_{period}': 'Vaccination', f'Masks_{period}': 'Masks',
                 f'Close_schools_{period}': 'Close_schools', f'Complete_{period}_rate': 'Complete_rate',
                 f'Booster_{period}_rate': 'Booster_rate', f'Mean_temperature_{period}': 'Mean_temperature_period',
@@ -176,6 +172,7 @@ rf_Y['fips'] = Y_test['fips']
 print(roc_auc_score(rf_Y['true'], rf_Y['class 1']))
 print(average_precision_score(rf_Y['true'], rf_Y['class 1']))
 
+
 ### categorize predictions (true/ false positive/ negative) and export results
 def predictionCat(rowtrue, rowpred):
     med = rf_Y['class 1'].median()
@@ -191,7 +188,6 @@ def predictionCat(rowtrue, rowpred):
 
 rf_Y['category'] = rf_Y.apply(lambda x: predictionCat(x['true'], x['class 1']), axis=1)
 rf_Y.to_excel(os.path.join('PreprocessedData', 'period5_prediction_results.xlsx'), header=True, index=False)
-
 
 
 
