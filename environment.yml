@@ -156,4 +156,5 @@ dependencies:
     - tomli==2.0.1
     - urllib3==1.26.9
     - widgetsnbextension==3.5.2
+    - xlrd==2.0.1
 prefix: C:\Users\wille\anaconda3\envs\Test_env
