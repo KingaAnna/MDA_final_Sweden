@@ -17,4 +17,4 @@ To get more insight into our analysis and results, we refer to our app on the li
 
 
 ## Important note
-During testing there were some issues when creating the Python environment in Anaconda using the **requirements.txt** file. Therefore, we also include the **environment.yml** file on this Github, with which the environment can be recreated without problems. When using this approach, Jupyter Notebook will appear to be uninstalled in the Anaconda interface, even though it is. It should be accessed through the command window with the command _jupyter notebook_.
+During testing there were some issues when creating the Python environment in Anaconda using the **requirements.txt** file. Therefore, we also include the **environment.yml** file on this Github, with which the environment can be recreated without problems. When using this approach, Jupyter Notebook will appear to be uninstalled in the Anaconda interface, even though it is. It should be accessed through the command window with the command ```jupyter notebook```.
