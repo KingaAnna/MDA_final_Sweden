@@ -80,7 +80,7 @@ class my_algorithms:
         self.graph.run(query,file=relationships)
 
         # Create an in-memory graph
-        query="""CALL gds.graph.create('Covid','State',{CORRELATED:{properties:'correlation', orientation:'UNDIRECTED'}})"""
+        query="""CALL gds.graph.project('Covid','State',{CORRELATED:{properties:'correlation', orientation:'UNDIRECTED'}})"""
         self.graph.run(query)
 
         # Perform community detection
