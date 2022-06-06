@@ -17,7 +17,7 @@ The notebooks are:
 To get more insight into our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
 
 # Important note
-The analysis in Neo4j was done using the following versions:
+The analysis in Neo4j was done using the following version:
   - Neo4j 4.4.7
   - APOC 4.4.0.5
   - Graph Data Science Library 2.0.4
