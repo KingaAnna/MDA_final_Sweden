@@ -16,6 +16,7 @@ The notebooks are:
 
 
 To get more insight into our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
+The code used to build the app can be found on https://github.com/IliasWillems/MDA-app.
 
 # Important note
 The analysis in Neo4j was done using the following versions:
