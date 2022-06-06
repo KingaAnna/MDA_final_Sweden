@@ -12,12 +12,12 @@ The notebooks are:
   - **Random Forest Models.ipynb**: Construct a binary target to label counties as hotspot/ no hotspot. Build a series of random forest models to classify and explain the classification as hotspot/ no hotspot. 
   - **SportingEvents.ipynb**: Study of large sporting events and Covid case increase.
   - **MaskUse.ipynb**: Brief investigation showing that mask use increase when cases increase.
-  - **Vaccine-file_prep_county.ipynb**: Preprocess vaccine data.
+  - **Vaccine_file_prep_county.ipynb**: Preprocess vaccine data.
 
 To get more insight into our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
 
 # Important note
-The analysis was in Neo4j was done with the following version:
+The analysis in Neo4j was done using the following version:
   - Neo4j 4.4.7
   - APOC 4.4.0.5
   - Graph Data Science Library 2.0.4
