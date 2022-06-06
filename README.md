@@ -3,6 +3,7 @@ In our project, we studied how Covid-19 evolved in the USA up to 2022-04-11. The
 
 The notebooks are:
   - **CovidMeasuresPreprocessing.ipynb**: Preprocess the data containing Covid measures.
+  - **Vaccine_file_prep_county.ipynb**: Preprocess vaccine data.
   - **Visualization.ipynb**: Visualize the weekly cases in the USA.
   - **infectionRates.ipynb**: Calculate and visualize the infection rates, together with the preprocessed Covid measures data. Also, a SVM model is constructed to predict the infection rates based on training data. 
   - **MergingFeatures.ipynb**: Preprocess, aggregate, impute and merge a wide range of features at county and state levels. 
@@ -12,7 +13,7 @@ The notebooks are:
   - **Random Forest Models.ipynb**: Construct a binary target to label counties as hotspot/ no hotspot. Build a series of random forest models to classify and explain the classification as hotspot/ no hotspot. 
   - **SportingEvents.ipynb**: Study of large sporting events and Covid case increase.
   - **MaskUse.ipynb**: Brief investigation showing that mask use increase when cases increase.
-  - **Vaccine_file_prep_county.ipynb**: Preprocess vaccine data.
+
 
 To get more insight into our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
 
