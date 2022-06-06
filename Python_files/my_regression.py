@@ -15,7 +15,7 @@ import statsmodels.api as sm
 
 # In[2]:
 
-
+# This implementation is based on https://gist.github.com/johnlees/3e06380965f367e4894ea20fbae2b90d
 class Firth_regression:
     def __init__(self):
         self.beta=[]
