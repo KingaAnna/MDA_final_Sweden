@@ -15,7 +15,7 @@ The notebooks are:
   - **MaskUse.ipynb**: Brief investigation showing that mask use increase when cases increase.
 
 
-To get more insight into our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/.
+To get more insight into our analysis and results, we refer to our app on the link https://app-modern-data-analytics.herokuapp.com/. <br />
 The code used to build the app can be found on https://github.com/IliasWillems/MDA-app.
 
 # Important note
